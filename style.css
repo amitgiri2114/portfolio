@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    background-color: rgb(243, 243, 243);
+    width: 127px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 640px;
+    transition: 0.1s ease-in;
+    position: absolute;
+}
+.sidebar nav{
+      padding: 0px;  
+}
+.sidebar nav li{
+    list-style: none;
+    padding: 30px;
+    font-size: 15px;
+}
+.sidebar a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /*background-color: rgb(171, 209, 235);*/
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.infocontainer{
+    /*background-color: aliceblue;*/
+    width: 82vw;
+    height: 500px;
+    margin: 70px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hello{
+    font-size: 40px;
+}
+.name{
+    font-size: 60px;
+    font-weight: bold;
+}
+.about{
+    font-size: 30px;
+}
+.moreabout{
+    margin-top: 10pxf;
+}
+.buttons{
+  margin: 30px;
+}
+.buttons button{
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    background-color: rgb(188, 228, 228);
+    margin: 15px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: aliceblue;
+    color: dodgerblue;
+}
+.devPic img{
+    height: 500px;
+    border-radius: 90px;
+}
+.contactform{
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 100px;
+}
+.contactform h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.sidebarGo{
+    transform: translate(-446px, 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.ham{
+    margin-top: 0px;
+    margin-left: -6px;
+}
+.cross{
+    margin-left: 78px;
+    margin-top: -6px;
+}
+@media  (max-width: 750px){
+    *{
+        background-color: blue;
+    }
+    .sidebar{
+        transform: translate(-443px,0px);
+        position: absolute;
+    }
+}
